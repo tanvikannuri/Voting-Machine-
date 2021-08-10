@@ -1,0 +1,167 @@
+@import url(https:fonts.googleapis.com/css/css?family=Open+Sans:400,300,300italic,400italic,600italic,600,700,700italic,800,800italic);
+
+*{
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  font-family: 'Open Sans',sans-serif;
+}
+
+
+.main{
+  margin: 0 auto;
+  height: 500px;
+  border: 3px solid  #5dade2;
+  background:  #eaeded;
+  border-radius: 8px;
+  margin-top:4%;
+}
+
+.leftBox{
+  width: 61%;
+  float: left;
+  margin-left: 4%;
+}
+
+.rightBox{
+  float: right;
+  width: 25%;
+  margin-right: 5%
+}
+
+.leftBox , .rightBox{
+  margin-top: 8%;
+  margin-bottom: 8%;
+}
+
+.leftBox{
+  border: 2px solid #5dade2;
+  border-radius: 2px;
+}
+
+.rightBox{
+  border: 2px solid #5dade2;
+  border-radius: 8px;
+}
+
+.leftBox li, .rightBox li{
+  list-style: none;
+  height: 50px;
+}
+
+.leftBox li{
+  border-bottom: 1px solid #5dade2;
+}
+
+.leftBox li img{
+  width: 30px;
+  margin: 10px;
+}
+
+.leftBox li span{
+  font-size: 12px;
+  position: absolute;
+  line-height: 50px;
+}
+
+.rightBox li{
+  border-bottom: 1px dashed #5dade2;
+}
+
+.btn_vote {
+  width: 60px;
+  height: 40px;
+  margin: 5px;
+  background: #3D94F6;
+  background-image: -webkit-linear-gradient(top, #3D94F6, #1E62D0);
+  background-image: -moz-linear-gradient(top, #3D94F6, #1E62D0);
+  background-image: -ms-linear-gradient(top, #3D94F6, #1E62D0);
+  background-image: -o-linear-gradient(top, #3D94F6, #1E62D0);
+  background-image: linear-gradient(to bottom, #3D94F6, #1E62D0);
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  border-radius: 20px;
+  border: solid #337FED 1px;
+  cursor: pointer;
+}
+
+.btn_vote:hover {
+   background: #1E62D0;
+   background-image: -webkit-linear-gradient(top, #1E62D0, #3D94F6);
+   background-image: -moz-linear-gradient(top, #1E62D0, #3D94F6);
+   background-image: -ms-linear-gradient(top, #1E62D0, #3D94F6);
+   background-image: -o-linear-gradient(top, #1E62D0, #3D94F6);
+   background-image: linear-gradient(to bottom, #1E62D0, #3D94F6);
+}
+
+.btn_light {
+   width: 12px;
+   height: 12px;
+   background: #922b21 ;
+   -webkit-border-radius: 20px;
+   -moz-border-radius: 20px;
+   border-radius: 20px;
+   display: inline-block;
+   border: none;
+   margin-left: 2px;
+}
+
+#msg{
+  margin: 5px;
+  text-align: center;
+}
+
+
+
+@media screen and (min-width: 1125px) {
+
+  .main{
+    width: 35%;
+  }
+
+}
+
+@media screen and (min-width: 850px) and (max-width: 1124px) {
+  .main{
+    width: 45%;
+  }
+}
+
+@media screen and (min-width: 581px) and (max-width: 849px) {
+  .main{
+    width: 70%;
+  }
+}
+
+@media only screen and (min-width: 400px)and (max-width: 580px) {
+  .main{
+    width: 90%;
+  }
+}
+
+@media only screen and (max-width: 399px) {
+  .main{
+    width: 98%;
+  }
+
+  .leftBox li img{
+    width: 25px;
+    margin: 8px;
+  }
+
+  .btn_vote {
+    width: 40px;
+    height: 30px;
+  }
+
+  .btn_light{
+    margin: 0px;
+  }
+
+  .leftBox li span{
+    font-size: 10.3px;
+  }
+
+}
